@@ -1,5 +1,5 @@
-var spawn = require('child_process').spawn
-  , exec = require('child_process').exec;
+var spawn = require('child_process').spawn, 
+	exec = require('child_process').exec;
 
 var nodeVer = spawn('node', [ '-v' ]);
 var pyVer = spawn('python', [ '-V']);
@@ -7,7 +7,7 @@ var pyVer = spawn('python', [ '-V']);
 stdEvents(nodeVer);
 stdEvents(pyVer);
 
-exec('undefined command', execCallback);
+// exec('unknown command', execCallback);
 exec('cat *.js | wc -l', execCallback);
 
 ////////////////////////////// functions //////////////////////////////

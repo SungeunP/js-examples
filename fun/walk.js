@@ -1,6 +1,6 @@
-var fs = require('fs')
-  , path = require('path')
-  , async = require('async');
+var fs = require('fs'), 
+    path = require('path'), 
+    async = require('async');
 
 walk('../..', function (dirname, dirnames, filenames) {
 	// console.log(dirname);
