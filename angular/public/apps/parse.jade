@@ -1,0 +1,15 @@
+div(ng-controller="ParseTestCtrl")
+	div
+		span {{contextName}}
+		br
+		span {{contextName2}}
+		br
+		span {{localsName}}
+		br
+p
+div(ng-controller="MyCtrl")
+	span.action(ng-click="increment($event)",
+				ng-right-click="decrement($event)",
+				select="select(text, value)")
+		{{value}}
+	span(style="margin-left:30px") <- click or rbclick me!!

@@ -1,0 +1,9 @@
+div(ng-controller="TCacheDemoCtrl")
+	div: h2 templateId.html
+	div(ng-include="'templateId.html'")
+	hr
+	div: h2 templateId2.html
+	div(ng-include="'templateId2.html'")
+
+script(type="text/ng-template", id="templateId.html")
+	This is the content of the template.

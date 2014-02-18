@@ -1,0 +1,50 @@
+div(ng-controller="ResourceDemoCtrl")
+	div(ng-init="currMethod='create'")
+		button.btn.btn-default(ng-click="currMethod='create'", ng-class="{ 'btn-primary': currMethod==='create' }") Create
+		button.btn.btn-default(ng-click="currMethod='update'", ng-class="{ 'btn-primary': currMethod==='update' }") Update
+		button.btn.btn-default(ng-click="currMethod='getOne'", ng-class="{ 'btn-primary': currMethod==='getOne' }") getOne
+	br
+	br
+	div(ng-init="nodeData={}")
+		div
+			label(style="width:100px") nid
+			input(type="text", ng-model="nodeData.nid")
+		div
+			label(style="width:100px") ipAddr
+			input(type="text", ng-model="nodeData.ipAddr")
+		div
+			label(style="width:100px") port
+			input(type="text", ng-model="nodeData.port")
+		div
+			label(style="width:100px") alive
+			input(type="checkbox", ng-model="nodeData.alive")
+		input.btn.btn-default(type="submit", value="{{currMethod | uppercase}}", ng-click="requestByFactory(currMethod, nodeData)")
+	br
+	br
+	div
+		table.table
+			thead
+				tr
+					th
+						span nid
+					th
+						span ipAddr
+					th
+						span port
+					th
+						span alive
+					th
+						span action
+			tbody
+				tr(ng-repeat="node in nodelist")
+					td(ng-click="setCurr(node)")
+						span {{node.nid}}
+					td
+						span {{node.ipAddr}}
+					td
+						span {{node.port}}
+					td
+						span {{node.alive}}
+					td
+						button.btn.btn-default.btn-xs(ng-click="requestByInstence('delete', node)")
+							span delete

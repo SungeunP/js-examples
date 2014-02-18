@@ -1,0 +1,20 @@
+doctype html
+html
+    head
+        title= title
+        //- library or plugin css files
+        link(rel="stylesheet", href="/lib/bootstrap.css")
+        //- user define css files
+        link(rel="stylesheet", href="/css/style.css")
+        //- javascripts
+        script(data-main="index.js", src="/lib/require/require.js")
+    body
+        #wrap
+            #header.page-header
+                h2 AngularJS Examples
+            #container
+                .contents_left(ng-controller="AppListCtrl").col-md-2
+                    ul.list-group
+                        li(ng-repeat="app in apps").list-group-item
+                            a(href="{{app.url}}") {{app.name}}
+                .contents_right(ng-view).col-md-10.panel.panel-default

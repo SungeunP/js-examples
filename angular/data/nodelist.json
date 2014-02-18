@@ -1,0 +1,158 @@
+[
+    {
+        "nid": "160",
+        "ipAddr": "192.168.0.160",
+        "port": 10050,
+        "alive": true,
+        "os": {
+            "type": "Linux",
+            "arch": "x64",
+            "release": "2.6.32-358.11.1.el6.x86_64",
+            "uptime": 11426994
+        }
+    },
+    {
+        "nid": "161",
+        "ipAddr": "192.168.0.161",
+        "port": 10050,
+        "alive": true,
+        "os": {
+            "type": "Linux",
+            "arch": "x64",
+            "release": "2.6.32-358.11.1.el6.x86_64",
+            "uptime": 14085272
+        }
+    },
+    {
+        "nid": "162",
+        "ipAddr": "192.168.0.162",
+        "port": 10050,
+        "alive": true,
+        "os": {
+            "type": "Linux",
+            "arch": "x64",
+            "release": "2.6.32-358.11.1.el6.x86_64",
+            "uptime": 14085291
+        }
+    },
+    {
+        "nid": "170",
+        "ipAddr": "192.168.0.170",
+        "port": 10050,
+        "alive": true,
+        "os": {
+            "type": "Linux",
+            "arch": "x64",
+            "release": "2.6.32-358.14.1.el6.x86_64",
+            "uptime": 13569420
+        }
+    },
+    {
+        "nid": "171",
+        "ipAddr": "192.168.0.171",
+        "port": 10050,
+        "alive": true,
+        "os": {
+            "type": "Linux",
+            "arch": "x64",
+            "release": "2.6.32-358.14.1.el6.x86_64",
+            "uptime": 9860254
+        }
+    },
+    {
+        "nid": "172",
+        "ipAddr": "192.168.0.172",
+        "port": 10050,
+        "alive": true,
+        "os": {
+            "type": "Linux",
+            "arch": "x64",
+            "release": "2.6.32-358.14.1.el6.x86_64",
+            "uptime": 9860201
+        }
+    },
+    {
+        "nid": "173",
+        "ipAddr": "192.168.0.173",
+        "port": 10050,
+        "alive": true,
+        "os": {
+            "type": "Linux",
+            "arch": "x64",
+            "release": "2.6.32-358.14.1.el6.x86_64",
+            "uptime": 9612597
+        }
+    },
+    {
+        "nid": "174",
+        "ipAddr": "192.168.0.174",
+        "port": 10050,
+        "alive": true,
+        "os": {
+            "type": "Linux",
+            "arch": "x64",
+            "release": "2.6.32-358.14.1.el6.x86_64",
+            "uptime": 9342907
+        }
+    },
+    {
+        "nid": "175",
+        "ipAddr": "192.168.0.175",
+        "port": 10050,
+        "alive": true,
+        "os": {
+            "type": "Linux",
+            "arch": "x64",
+            "release": "2.6.32-358.14.1.el6.x86_64",
+            "uptime": 9342794
+        }
+    },
+    {
+        "nid": "176",
+        "ipAddr": "192.168.0.176",
+        "port": 10050,
+        "alive": true,
+        "os": {
+            "type": "Linux",
+            "arch": "x64",
+            "release": "2.6.32-358.14.1.el6.x86_64",
+            "uptime": 9342796
+        }
+    },
+    {
+        "nid": "177",
+        "ipAddr": "192.168.0.177",
+        "port": 10050,
+        "alive": true,
+        "os": {
+            "type": "Linux",
+            "arch": "x64",
+            "release": "2.6.32-358.14.1.el6.x86_64",
+            "uptime": 2418454
+        }
+    },
+    {
+        "nid": "178",
+        "ipAddr": "192.168.0.178",
+        "port": 10050,
+        "alive": true,
+        "os": {
+            "type": "Linux",
+            "arch": "x64",
+            "release": "2.6.32-358.14.1.el6.x86_64",
+            "uptime": 9342827
+        }
+    },
+    {
+        "nid": "179",
+        "ipAddr": "192.168.0.179",
+        "port": 10050,
+        "alive": true,
+        "os": {
+            "type": "Linux",
+            "arch": "x64",
+            "release": "2.6.32-358.14.1.el6.x86_64",
+            "uptime": 2418987
+        }
+    }
+]

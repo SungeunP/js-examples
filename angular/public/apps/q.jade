@@ -1,0 +1,13 @@
+div(ng-controller = "qCtrl")
+	form(name='dirForm')
+		input(ng-model='name', ng-model-instant)
+		div
+			hr
+			span{{name}}
+			br
+			span{{result.field}}
+		ul
+			li(ng-repeat=" item in items")
+				span {{item.time}} {{item.css}} {{item.id}}
+			{{message}}
+	button(ng-click='dirTest(name)', ng-disabled='!dirForm.$valid') button
