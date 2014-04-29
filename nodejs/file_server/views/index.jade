@@ -1,0 +1,19 @@
+doctype html
+html
+    head
+        meta(http-equiv="Content-Type", content="text/html; charset=UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=dege")
+        title Up/Download Test Page
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        script(type="text/javascript", src="http://code.jquery.com/jquery-1.9.1.min.js")
+        script(type="text/javascript", src="/javascripts/index.js")
+    body
+        div
+            h3 File Upload
+            form(method="POST", action="/upload", enctype="multipart/form-data")
+                input(type="file", name="test", multiple="multiple")
+                input(type="submit", name="upload")
+        div
+            h3 File Download
+            ul#list
+
