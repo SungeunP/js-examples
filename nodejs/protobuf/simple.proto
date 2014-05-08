@@ -1,0 +1,19 @@
+package com.mobigen.test;
+
+message Request {
+    enum Type {
+        GET = 0;
+        SET = 1;
+        MOD = 2;
+        DEL = 3;
+    }
+
+    optional Type type = 1;
+    optional string message = 2;
+    repeated int32 array = 3;
+}
+
+message Response {
+    optional string message = 1;
+    repeated int32 number = 2 [packed=true];
+}
