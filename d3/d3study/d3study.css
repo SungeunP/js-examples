@@ -1,0 +1,21 @@
+    svg {
+        background-color: grey; /* since the point is white */
+        width: 500px;
+        height: 500px;
+    }
+    circle {
+    /*cx: 50; 이 방식으로 불가능하다. style이 아니고, circle의 속성이다.*/
+    /*cy: 50;*/
+	/*r: 30;*/
+	stroke: blue;
+	stroke-width: 3;
+    stroke-linecap: round;
+	fill: green;
+	}
+	rect {
+		fill: #c5c1be;
+		stroke: blue;
+		stroke-width: 5;
+		/*width: 200px;* 마찬가지로 불가능하다./
+        /*height: 200px;*/
+	}
