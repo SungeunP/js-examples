@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+body {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 2px;
+  opacity: 0.5;
+}
+.line.off {
+  opacity: 0;
+}
+
+.legend {
+  cursor: pointer;
+}
+
+rect.legend {
+  stroke-width: 1px;
+}
+
+rect.legend.off {
+  fill: none;
+}
+
+</style>
+<body>
+  <div id="line1"></div>
+  <div id="line2"></div>
+<script src="http://d3js.org/d3.v3.js"></script>
+<script>
+var margin = {top: 20, right: 20, bottom: 30, left: 50},
+    width = 960 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
+
+var symbolTypes = [
+  'circle',
+  'cross',
+  'diamond',
+  'square',
+  'triangle-down',
+  'triangle-up'
+];
+var symbolSize = 640;
+
+var symbol = d3.svg.symbol([0, 2, 4, 7])
+    .size(symbolSize);
+
+var color = d3.scale.category10()
+    .domain(symbolTypes);
+
+var svg = d3.select("#line1").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    svg.selectAll("path.symbol")
+        .data(symbolTypes)
+      .enter().append("svg:path")
+        .attr("class", "symbol")
+        .style('fill', color)
+        .attr("transform", function(d, i) { return "translate(" + (100) + "," + (100 + (symbolSize/10)*i) + ")"; })
+        .attr("d", function (d, i) {
+          return symbol.type(d)(i);
+        });
+</script>
