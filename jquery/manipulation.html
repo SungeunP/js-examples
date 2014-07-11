@@ -1,0 +1,78 @@
+<!-- http://api.jquery.com/append/ -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            p{
+                background:yellow;
+            }
+			 div {
+                border:2px blue solid;
+                margin:2px;
+                padding:2px;
+            }
+			.buttonColor{
+				background: red;
+			}
+
+        </style>
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+    </head>
+    <body>
+        <p id='append'>
+            say : 
+        </p>
+		
+		<p id='after'>
+            say : 
+        </p>
+		<br><br/><br><br/>
+		
+		<span>Span Text</span>
+        <strong>What about me?</strong>
+        <span>Another One</span>
+		<br/>
+		
+		<h2>
+            Hello
+        </h2>
+        how are
+        <h2>
+            you?
+        </h2>
+		<br><br/><br><br/>
+		
+        <button>
+            Call remove() on paragraphs
+        </button>
+		<br><br/><br><br/>
+		
+		<button id='addClass'>
+            add class
+        </button>
+		<br><br/><br><br/>
+		
+		<input type='text', value='some text'>
+		<p id='someText'>
+		
+        <script>
+			$("#append").append("<strong>append</strong>");
+			$("#after").after("<b>after</b>");
+			
+			$("span").wrap("<div><div><p><em><b></b></em></p></div></div>");
+			
+			$("button").click( function () {
+                $("#append").remove();
+            });
+			
+			$('#addClass').click(function(){
+				$(this).toggleClass('buttonColor');
+			});
+			
+			$('input').keyup(function(){
+				var value = $(this).val();
+				$('#someText').text(value);
+			}).keyup();
+		</script>
+    </body>
+</html>

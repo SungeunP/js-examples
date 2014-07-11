@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script type="text/javascript">
+            function clickHandler(e){
+                alert('thank you');
+            }
+			 
+            $(document).ready(function(){
+                 $('#click_me').click(clickHandler); 
+                 $('#remove_event').click(function(e){
+                     $('#click_me').unbind('click', clickHandler);
+                 });
+                 $('#trigger_event').click(function(e){
+                     $('#click_me').trigger('click');
+                 });
+				 $('#test').bind({
+					click : function(event) {
+						alert('test button click!');
+					},
+					mouseenter : function(event) {
+						$('#test').css('background','red');
+					},
+				});	
+             })
+			 
+        </script>
+    </head>
+    <body>
+        <input id="click_me" type="button" value="click me" />
+        <input id="remove_event" type="button" value="unbind" />
+        <input id="trigger_event" type="button" value="trigger" />
+		<input id="test" type="button" value="test">
+    </body>
+</html>
