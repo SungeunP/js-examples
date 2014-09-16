@@ -59,3 +59,21 @@
   .my-mixin;
   .my-other-mixin;
 }
+// example 07
+.rounded_top(@radius) {
+    -webkit-border-top-left-radius: @radius;
+    -webkit-border-top-right-radius: @radius;
+    -moz-border-radius-topleft: @radius;
+    -moz-border-radius-topright: @radius;
+    border-top-left-radius: @radius;
+    border-top-right-radius: @radius;
+}
+.tab {
+    background: #333;
+    color:#fff;
+    .rounded_top(6px);
+}
+.submit {
+    .rounded_top(3px);
+}
+

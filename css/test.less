@@ -1,0 +1,226 @@
+@image-path: "../images";
+@icon-path: "../images/icon";
+
+header {
+	position:relative;
+	height:44px;
+	background:#2b2b2b;
+	border-top:1px solid #191919;
+	border-bottom:1px solid #191919;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+
+	&:after {
+		content:'';
+		clear:both;
+		display:block;
+	}
+	.logo {
+		position:absolute;
+		top:2px;
+		left:0;
+		width:177px;
+		height:40px;
+		background:url('@{image-path}/logo.png') 0 0 no-repeat;
+		a {
+			display:block;
+			height:100%
+		}
+	}
+	.selectbox {
+		position:absolute;
+		left:177px;
+		margin-top:4px;
+	}
+	.top_group {
+		margin-left:322px;
+		margin-right:192px;
+	}
+	.user_group {
+		position:absolute;
+		right:0;
+		top:-1px;
+		box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		width:192px;
+		height:44px;
+		border-left:1px solid #191919;
+		color:#999;
+
+		.alram_group {
+			padding-left:15px;
+			border-left:1px solid #383838;
+		}
+		.layer_group {
+			float:left;
+			padding-left:10px;
+			padding-top:14px;
+			height:100%;
+			&:last-child {
+				margin-left:15px;
+			}
+		}
+		.layer {
+			width:285px;
+			min-height:185px;
+			top:50px;
+			right:-10px;
+		}
+	}
+}
+
+nav {
+	.nav-after() {
+		content:'';
+		clear:both;
+		display:block;
+	}
+
+	&:after {
+		.nav-after;
+	}
+	ul {
+		height: 44px;
+
+		&:after {
+			.nav-after;
+		}
+	}
+	li {
+		float:left;
+		height:100%;
+
+		a {
+			display:block;
+			height:100%;
+			vertical-align:middle;
+			color:#999;
+
+			&:after {
+				content:'';
+				display:inline-block;
+				height:100%;
+				vertical-align:middle;
+			}
+			&:hover {
+				color:#dba327;
+			}
+		}
+	}
+	li+li {
+		margin-left:20px;
+	}
+}
+
+.bg-gradient(@background, @gradient) {
+	background: @background;
+	background: -moz-linear-gradient(top,  @background 0%, @gradient 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@background), color-stop(100%,@gradient));
+	background: -webkit-linear-gradient(top,  @background 0%,@gradient 100%);
+	background: -o-linear-gradient(top,  @background 0%,@gradient 100%);
+	background: -ms-linear-gradient(top,  @background 0%,@gradient 100%);
+	background: linear-gradient(to bottom,  @background 0%,@gradient 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@{background}', endColorstr='@{gradient}', GradientType=0 );
+}
+
+/* button */
+.btns {
+	@shadow: 0px 1px 2px #222;
+	.btns-gradient(@defBg, @defGd, @hoverBg, @hoverGd, @star) {
+		.bg-gradient(@defBg, @defGd);
+
+		&:hover {
+			.bg-gradient(@hoverBg, @hoverGd);
+		}
+		* {
+			color: @star
+		}
+	}
+
+	display:inline-block;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	padding:0 10px;
+	min-width:65px;
+	height:23px;
+	border-radius:2px;
+	border:0;
+	text-align:center;
+
+	box-shadow: @shadow;
+	-webkit-box-shadow: @shadow;
+	-moz-box-shadow: @shadow;
+
+	.btns-gradient(#878787, #686868, #939393, #777, #222);
+
+	span {
+		display:inline-block;
+		height:100%;
+		vertical-align:middle;
+		font-size:12px;
+		font-weight:bold
+
+		&:after {
+			content:'';
+			display:inline-block;
+			height:100%;
+			vertical-align:middle;
+		}
+	}
+	&.mid {
+		height:34px;
+		border-radius:3px
+	}
+	&.yel {
+		.btns-gradient(#c08b14, #986901, #c6972c, #a3781b, #612503);
+	}
+	&.gre {
+		.btns-gradient(#6f8817, #516804, #7e942f, #63771e, #242e14);
+	}
+	&.red {
+		.btns-gradient(#b93d29, #912414, #c0513f, #9c3a2c, #3d0800);
+	}
+	&.blu {
+		.btns-gradient(#3869b7, #204b90, #4c78be, #375d9b, #00244a);
+	}
+	&.blk {
+		outline:1px solid #212121;
+		.btns-gradient(#3a3a3a, #323232, #404040, #383838, #8b8b8b);
+	}
+
+	&.ico {
+		padding-right:15px;
+
+		span:before {
+			content: '';
+			display: inline-block;
+			margin: -2px 8px 0 0;
+			width: 16px;
+			height: 16px;
+			background-repeat: no-repeat;
+			vertical-align: middle;
+		}
+		&.ico_r {
+			padding-left:15px;
+			padding-right:10px;
+
+			span:before {
+				float: right;
+				margin: 3px 0 0 8px;
+			}
+			&.mid span:before {
+				margin-top:7px
+			}
+		}
+	}
+	&.yel.ico span:before {
+		background-image: url('@{icon-path}/ico_btn_y.png');
+	}
+	&.gre.ico span:before {
+		background-image: url('@{icon-path}/ico_btn_g.png');
+	}
+	&.red.ico span:before {
+		background-image: url('@{icon-path}/ico_btn_r.png');
+	}
+}
