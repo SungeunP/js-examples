@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>D3.js로 만든 우리나라 지도</title>
+	<meta name="description" content="D3.js로 만든 우리나라 지도">
+	<meta name="author" content="링크잇, http://linkit.kr">
+
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/themes/base/jquery-ui.css" />
+	<link rel="stylesheet" href="css/korean-map.css">
+
+	<!--[if lt IE 9]>
+  <script src="http://linkit.kr/demos/browser_update.js"></script>
+  <![endif]-->
+
+  	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script src="http://d3js.org/d3.v3.js"></script>
+</head>
+<body>
+
+	<div id="container" class="container">
+		<h1>D3.js로 만든 우리나라 지도</h1>
+
+		<div id="radio">
+			<span class="title">지명표시</span>
+	    <input type="radio" id="radio1" name="radio" value="on" checked><label for="radio1">On</label>
+	    <input type="radio" id="radio2" name="radio" value="off"><label for="radio2">Off</label>
+	  </div>
+
+	  <div id="control" class="ui-widget-header ui-corner-all">
+		  <button id="zoomin">확대</button>
+		  <button id="zoomout">축소</button>
+		</div>
+	</div>
+
+	<div class="footer">
+		<p>이 지도는 <a href="http://d3js.org/" target="_blank">D3.js</a>로 만들었으며 <a href="http://bl.ocks.org/mbostock/2206340" target="_blank">mbostock’s block #2206340</a>을 보고 만든 것입니다.</p>
+		<p>원본: <a href="http://codefactory.kr/demos/D3/korean-map/">http://codefactory.kr/demos/D3/korean-map/</a></p>
+	</div>
+
+	<script src="korean-map.js"></script>
+</body>
+</html>
