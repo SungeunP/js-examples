@@ -2,12 +2,15 @@
 
 requirejs.config({
     paths: {
-        'jquery': 'lib/jquery/jquery-1.10.2.min',
+        'jquery': 'lib/jquery/jquery-1.11.1.min',
+
         'underscore': 'lib/underscore-min',
+
         'angular': 'lib/angular/angular.min',
         'angular-route': 'lib/angular/angular-route.min',
         'angular-resource': 'lib/angular/angular-resource.min',
         'angular-cookies': 'lib/angular/angular-cookies.min',
+
         'd3': 'lib/d3.min',
     },
 
