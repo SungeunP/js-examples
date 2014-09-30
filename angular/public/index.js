@@ -9,9 +9,7 @@ requirejs.config({
         'angular': 'lib/angular/angular.min',
         'angular-route': 'lib/angular/angular-route.min',
         'angular-resource': 'lib/angular/angular-resource.min',
-        'angular-cookies': 'lib/angular/angular-cookies.min',
-
-        'd3': 'lib/d3.min',
+        'angular-cookies': 'lib/angular/angular-cookies.min'
     },
 
     shim: {
@@ -33,9 +31,6 @@ requirejs.config({
         },
         'angular-cookies': {
             deps: [ 'angular' ]
-        },
-        'd3': {
-            exports: 'd3'
         }
     }
 });
