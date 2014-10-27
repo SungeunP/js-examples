@@ -16,6 +16,7 @@
   "newcap": true,   // new animal() [x] / new Anamal() [o]
   "noarg": true,    // deprecated arguments.caller, arguments.callee
   "sub": true,      // .key [o] / ['key'] [o]
+  "validthis": true, // Possible strict violation
 
   // defaults
   "browser": true,
