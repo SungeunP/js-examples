@@ -1,0 +1,13 @@
+{
+	"color_scheme": "Packages/Color Scheme - Default/Twilight.tmTheme",
+	"default_line_ending": "unix",
+	"fallback_encoding": "UTF-8",
+	"font_face": "나눔고딕코딩",
+	"font_size": 17,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"word_wrap": true
+}
