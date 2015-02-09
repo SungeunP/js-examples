@@ -15,6 +15,7 @@
             height: 1
         }
     };
+
     var width = el.clientWidth;
     var height = el.clientHeight;
     var widthCount = width / cell.size.width;
@@ -44,5 +45,5 @@
     // run
     draw();
     // redraw
-    setInterval(draw, 3000);
+    // setInterval(draw, 3000);
 })();
