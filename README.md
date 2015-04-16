@@ -1,4 +1,4 @@
 js-examples
 ===========
 
-Javascript/NodeJS/AnlaurJS/Etc Code Examples
+Javascript/NodeJS/AngularJS/D3.js/Etc Code Examples
