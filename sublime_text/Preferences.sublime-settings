@@ -1,15 +1,17 @@
 {
-    "ignored_packages":
-    [
-        "Vintage"
-    ],
-    "default_line_ending": "unix",
-    "ensure_newline_at_eof_on_save": true,
-    "fallback_encoding": "UTF-8",
-    "font_face": "NanumGothicCoding",
-    "font_size": 18,
-    "highlight_line": true,
-    "translate_tabs_to_spaces": true,
-    "trim_trailing_white_space_on_save": true,
-    "word_wrap": true
+	"color_scheme": "Packages/Theme - Brogrammer/brogrammer.tmTheme",
+	"default_line_ending": "unix",
+	"ensure_newline_at_eof_on_save": true,
+	"fallback_encoding": "UTF-8",
+	"font_face": "NanumGothicCoding",
+	"font_size": 18.0,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"theme": "Brogrammer.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": false
 }
