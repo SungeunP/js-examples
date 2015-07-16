@@ -10,7 +10,7 @@
   "freeze": true,   // Array, String, Date prototype freeze
   "indent": 4,      // indent: space 4
   "maxlen": 80,     // max char length about line
-  "curly": true,
+  "curly": true,    // use {} block (if-else, for, while, ...)
   "eqeqeq": true,   // ==, != [x] / ===, !== [o]
   // "latedef": true,
   "newcap": true,   // new animal() [x] / new Anamal() [o]
